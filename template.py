@@ -1,6 +1,5 @@
-# -*- coding: utf-8 -*-
-
-# 標準入力
+import sys
+input = sys.stdin.readline
 
 # 文字列の入力
 S = input()
