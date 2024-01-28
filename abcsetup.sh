@@ -1,7 +1,6 @@
 #!/bin/bash
 # ABCの219番を解きたい場合 -> ./abcsetup.sh 219 (Linux)
-# ABCの219番を解きたい場合 -> bash abcsetup.sh 219 (Windows)
-
+# ABCの219番を解きたい場合 -> wsl bash abcsetup.sh 219 (Windows)
 if [ $# -ne 1 ]; then
   echo "Usage: $0 2xx" 1>&2
   exit 1
@@ -29,7 +28,6 @@ cp -n template.cpp ABC/$1/C/e.cpp
 cp -n template.cpp ABC/$1/C/f.cpp
 cp -n template.cpp ABC/$1/C/g.cpp
 cp -n template.cpp ABC/$1/C/h.cpp
-
 cp -n template.py ABC/$1/PY/a.py 
 cp -n template.py ABC/$1/PY/b.py
 cp -n template.py ABC/$1/PY/c.py
